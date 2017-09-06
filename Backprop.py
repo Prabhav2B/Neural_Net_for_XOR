@@ -54,7 +54,7 @@ class nnXor:
 		
 		#The Error between the predicted and actual output.
 		self.Del_out = self.output-self.y 
-		self.Del_hid = np.dot(self.W2,Err)*act_prime(self.hidden)
+		self.Del_hid = np.dot(self.W2,self.Del_out)*act_prime(self.hidden)
 
 		#Parameter Updation
 		self.W2 = self.W2 - self.a*self.Del_out
