@@ -22,9 +22,6 @@ X = np.array([[0,0],[0,1],[1,0],[1,1]])
 Y = np.array([[0],[1],[1],[0]])
 Iter = 6000
 
-#x = np.c_[np.ones(4), X] # 4 X 3
-#y = Y # 4 X 1 
-
 #Random Initialization of Weights between -.5 to .5
 W1 = 2*np.random.random((2,4)) - 1 
 W2 = 2*np.random.random((4,1)) - 1  
