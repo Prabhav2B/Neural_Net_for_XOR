@@ -4,7 +4,7 @@ import time
 
 #Backpropogation Neural Network with 1 hidden layer
 
-#Activation Function used: ReLU
+#Activation Function used: Sigmoid
 def act(Squash_this):
   return 1/(1 + np.exp(-Squash_this))
 
